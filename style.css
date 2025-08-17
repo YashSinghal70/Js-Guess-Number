@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+      font-family: "Ubuntu", sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("8389460.jpg");
+   
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    color: white;
+     font-size:30px;
+}
+.chances{
+    color: white;
+    font-size:25px;
+}
+.hint{
+    color: white;
+     font-size:25px;
+}
+.container{
+    background-color: #00000f2e;
+    backdrop-filter: blur(10px);
+    border: 1px solid transparent;
+    padding: 20px;
+    display: flex;
+     gap: 20px;
+    flex-direction: column;
+   align-items: center;
+   width: 450px;
+   border-radius: 2px;
+}
+div{
+    /* border: 2px solid white; */
+    width: 100%;
+}
+/* input{
+    padding: 10px 0;
+width: 100%;
+} */
+
+/* input */
+
+.nebula-input {
+  position: relative;
+  /* width: 250px; */
+  margin: 30px auto;
+}
+
+.nebula-input .input {
+  width: 90%;
+  padding: 15px;
+  border: 2px solid #2a2a3a;
+  background: #00000f;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.4s ease-out;
+  font-size: 16px;
+}
+
+.nebula-input .user-label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  pointer-events: none;
+  color: #6a6a8a;
+  transition: all 0.4s ease-out;
+  background: #00000f;
+  padding: 0 5px;
+}
+
+.nebula-input .input:focus {
+  border-color: #b56aff;
+  box-shadow:
+    0 5px 8px rgba(181, 106, 255, 0.3),
+    0 10px 20px rgba(181, 106, 255, 0.2),
+    0 15px 40px rgba(181, 106, 255, 0.15),
+    0 20px 60px rgba(181, 106, 255, 0.1);
+}
+
+.nebula-input .input:focus ~ .user-label,
+.nebula-input .input:valid ~ .user-label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  color: #d18cff;
+  left: 10px;
+}
+
+.nebula-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  top: 50%;
+  left: 10px;
+  filter: blur(0.8px);
+  mix-blend-mode: screen;
+  transition: opacity 0.3s ease;
+}
+
+.nebula-input .input:focus ~ .nebula-particle {
+  animation: nebula-float 2s forwards ease-out;
+}
+
+@keyframes nebula-float {
+  0% {
+    transform: translate(0, -50%) scale(0.8);
+    opacity: 0;
+    background: #c774ff;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(calc(var(--x) * 140px), calc(var(--y) * 35px))
+      scale(1.1);
+    opacity: 0;
+    background: #6df2ff;
+  }
+}
+
+
+/* input end */
+
+/* btn start */
+
+.button {
+  letter-spacing: .8px;
+  font-weight: 600;
+  font-size: 17px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(128, 41, 243);
+  transition: all 0.2s ease;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7f29f0 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #791fee 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #6e16e0 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #6c16dc 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+/* btn end */
+
+
+.btn1 {
+  background: transparent;
+  position: relative;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #8029f3;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #8029f3;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.btn1 span {
+  margin: 10px;
+}
+
+.btn1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.btn1:hover {
+  color: #fff;
+  border: 2px solid #8029f3;
+}
+
+.btn1:hover::before {
+  box-shadow: inset 0 0 0 10em #8029f3;
+}

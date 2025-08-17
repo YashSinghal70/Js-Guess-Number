@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="icon" type="image" href="doubt (1).png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>Guess The Number Game</h1> -->
+
+<div class="container">
+
+<h2>You guess the Number 1 to 10</h2>
+
+<!-- Input Filed -->
+<div class="nebula-input">
+  <input required="" type="text" name="text" autocomplete="off" class="input" />
+  <label class="user-label">Enter Your Number</label>
+  <div class="nebula-particle" style="--x:0.2; --y:-0.4; --delay:0.1s"></div>
+  <div class="nebula-particle" style="--x:0.5; --y:-0.2; --delay:0.3s"></div>
+  <div class="nebula-particle" style="--x:0.3; --y:0.3; --delay:0.5s"></div>
+  <div class="nebula-particle" style="--x:0.7; --y:0.1; --delay:0.2s"></div>
+  <div class="nebula-particle" style="--x:0.1; --y:-0.7; --delay:0.4s"></div>
+  <div class="nebula-particle" style="--x:0.6; --y:0.4; --delay:0.6s"></div>
+</div>
+
+
+<!-- Guess Btn -->
+<div>
+    <button class="button"  onclick="guessNumber()">
+Guess
+    </button>
+</div>
+
+<!-- Chances -->
+<div>
+    <p class="chances">0</p>
+</div>
+
+<!-- Hint -->
+<div>
+    <p class="hint">Do The First Guess Hint</p>
+</div>
+
+<!-- Restart -->
+<div>
+    <button class="btn1" onclick="Restart()"><span>Restart</span></button>
+</div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
