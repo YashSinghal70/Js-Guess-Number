@@ -40,6 +40,7 @@ else{
 
 }
 else{
+    alert("No Chaces Remain Restart !")
 document.querySelector(".chances").innerHTML= `Guess Finshed`;
 document.querySelector(".hint").innerHTML=`You Lost ,The Answer was ${RandomNumber} `
 // return;
